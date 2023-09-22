@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Amalgama</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- MENÚ -->
+    <nav id="menú">
+      <ul>
+        <a class="subs" href="#suscripcion"><li>Suscripciones</li></a>
+        <a class="empre" href="#PRODUCTOS"
+          ><li>Productos y Emprendedores</li></a
+        >
+      </ul>
+      <a class="inicio_logo" href="index.html">
+        <img
+          class="logo-1"
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO BLANCO.svg?v=1691598073298"
+        />
+      </a>
+
+      <ul>
+        <div class="buscador">
+          <input type="text" placeholder="Buscar" required />
+          <div class="btn">
+            <a>
+              <img
+                class="buscar"
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Lupa.svg?v=1691544366553"
+            /></a>
+            <i class="search"></i>
+          </div>
+        </div>
+        <a href="index.html">
+          <img
+            class="nosotros"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/IcoNn%20i.svg?v=1692109377458"
+          />
+        </a>
+
+        <!-- Inicio del boton -->
+        <div class="boton-modal">
+          <label for="btn-modal">
+            <img
+              class="usuario"
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Long%20in.svg?v=1691544369601"
+            />
+          </label>
+        </div>
+        <!-- Fin del boton -->
+
+        <!--Ventana Modal-->
+        <input type="checkbox" id="btn-modal" />
+        <div class="container-modal">
+          <div class="content-modal">
+            <h2>Login</h2>
+            <div class="input-box">
+              <span class="icon"
+                ><img
+                  class="email-img"
+                  src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Mail%20filled.svg?v=1691883813046"
+              /></span>
+              <input type="email" required />
+              <label>Correo</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <img
+                  class="email-img2"
+                  src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Password%20filled.svg?v=1691883808303"
+                />
+              </span>
+              <input type="password" required />
+              <label>Contraseña</label>
+            </div>
+            <div class="recordar-contra">
+              <label><input type="checkbox" />Recordar Contraseña</label>
+              <a class="animacion" href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button class="btn-inicio" type="submit">Login</button>
+            <div class="registrarse">
+              <p>
+                ¿No tienes cuenta?
+                <a href="#">Registrate</a>
+              </p>
+            </div>
+
+            <div class="btn-cerrar">
+              <label for="btn-modal">Cerrar</label>
+            </div>
+          </div>
+          <label for="btn-modal" class="cerrar-modal"></label>
+        </div>
+        <!--Fin de Ventana Modal-->
+      </ul>
+    </nav>
+
+    <!-- FILTRO -->
+    <section id="filtro">
+      <label for="botonprecio"><h4 class="botonfiltro">PRECIO</h4></label>
+      <input type="checkbox" id="botonprecio" />
+      <label class="mostrar-bt-precio" for="botonprecio"><span></span></label>
+      <div class="precios">
+        <a><h3>$5.000 - $50.000</h3></a>_________________<br />
+        <a><h3>$50.000 - $100.000</h3></a>_________________<br />
+        <a><h3>$100.000 - y más...</h3></a>
+      </div>
+
+      <label for="boton-ubi"><h4 class="botonfiltro">UBICACIÓN</h4></label>
+      <input type="checkbox" id="boton-ubi" />
+      <label class="mostrar-bt-ubicacion" for="boton-ubi"><span></span></label>
+
+      <div class="ubicacion">
+        <a><h3>Cajicá</h3></a>_________________<br />
+        <a><h3>Chía</h3></a>_________________<br />
+        <a><h3>Zipaquira</h3></a>
+      </div>
+
+      <label for="boton-cate"><h4 class="botonfiltro">CATEGORÍA</h4></label>
+      <input type="checkbox" id="boton-cate" />
+      <label class="mostrar-bt-categoria" for="boton-cate"><span></span></label>
+
+      <div class="categoria">
+        <a><h3>Bisutería</h3></a>_________________<br />
+        <a><h3>Confitería</h3></a>_________________<br />
+        <a><h3>Artesanía</h3></a>
+      </div>
+    </section>
+
+    <!-- EMRENDIMIENTOS FILTRADOS -->
+    <center>
+    <section class="emprendimientosec2">
+      <div class="lista_emprendimiento">
+        <div class="emprendimiento1">
+          <label for="prueba">
+            <img
+              class="logo-e"
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/CUPCAKES_YUL%C2%B4S.svg?v=1692104021180"
+              alt="#"
+          /></label>
+        </div>
+
+        <input type="checkbox" id="prueba" />
+        <label class="mostrar" for="prueba"><span></span></label>
+
+        <!-- PERFIL 1 -->
+        <section class="perfiles1">
+          <center>
+            <div class="ancho_info">
+              <div class="filminuto">
+                <img />
+              </div>
+              <div class="infoperfil">
+                <div class="logo_pag2">
+                  <img
+                    src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/CUPCAKES_YUL%C2%B4S.svg?v=1692104021180"
+                    alt="logo"
+                  />
+                </div>
+                <div>
+                  <h1 class="h1_titulo">CUPCAKES YUL´S</h1>
+                  <h2 class="h1_titulo">Yuli Rodriguez</h2>
+                </div>
+                <div class="div-donar">
+                  <button class="boton dos">
+                    <center>
+                    <span> DONAR
+                      <img
+                        class="favorito"
+                        src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Coraz%C3%B3n.svg?v=1695043070063"
+                      />
+                    </span>
+                      </center>
+                  </button>
+                </div>
+              </div>
+              <center>
+              <div class="filminuto">
+                <video src="https://cdn.glitch.me/d92b818a-abeb-4936-adb4-955c6420ae91/cupcakesyuls.mp4?v=1695046478725" width="540" height="380" controls playsinline poster></video>
+              </div>
+                </center>
+              
+              
+              <h1 class="h2_titulo">PRODUCTOS</h1>
+              <div class="espacio_productos">
+                <div class="productospag2">
+                  <div class="size_car">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/pastel4.jpg?v=1694709707419"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/pastel2.jpg?v=1694709691856"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/pastel1.jpg?v=1694709678327"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="info_produ">
+                      <ul>
+                        <li class="infoprod">
+                          <div>
+                            <h1 class="texto_verdepag2">Torta tres leches</h1>
+                            <p class="texto_parrafopag2">
+                              Tortas personalizadas a gusto del consumidor,con crema chantilly o fondant.
+                            </p>
+                            <h2 class="precio_pag2">$50.000 c/u</h2>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/rosquita1.jpg?v=1695007405184"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/rosquita2.jpg?v=1695007411250"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/rosquita44.jpg?v=1695007422680"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="info_produ">
+                      <ul>
+                        <li class="infoprod">
+                          <div>
+                            <h1 class="texto_verdepag2">Rosquitas de Galleta</h1>
+                            <p class="texto_parrafopag2">Galletas con decoración personalizada, con cubierta de glass.</p>
+                            <h2 class="precio_pag2">$3.000 c/u</h2>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car2">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/capkep5.jpg?v=1695045615267"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/capkep1.jpg?v=1695045618957"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/capkep3.jpg?v=1695045624866"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="info_produ">
+                      <ul>
+                        <li class="infoprod">
+                          <div>
+                            <h1 class="texto_verdepag2">Cupcakes</h1>
+                            <p class="texto_parrafopag2">Cupcakes de vainilla, chocolate, limón o chips con cobertura de crema.</p>
+                            <h2 class="precio_pag2">$10.000 c/u</h2>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car2">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/tiramizu2.jpg?v=1695007179231"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/tiramizu1.jpg?v=1695007170912"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/tiramizu4.jpg?v=1695007184088"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="info_produ">
+                      <ul>
+                        <li class="infoprod">
+                          <div>
+                            <h1 class="texto_verdepag2">Postres</h1>
+                            <p class="texto_parrafopag2">Variedad de postres como Tiramisú, tres leches, postre de limon y demás</p>
+                            <h2 class="precio_pag2">$15.000 c/u</h2>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacto">
+                <h1 class="h2_titulo">CONTACTO</h1>
+                <div class="redes">
+                  <div>
+                    <a href="https://instagram.com/cupcakesyuls?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/insta%20linea.svg?v=1692104023115"
+                      alt="instagram"
+                    /></a>
+                  </div>
+                  <div>
+                    <a href="https://www.facebook.com/104798471242202" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/facebook%20linea.svg?v=1692104023487"
+                      alt="facebook"
+                    /></a>
+                  </div>
+                  <div>
+                    <a href="https://wa.link/a2umqw" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/wasap.svg?v=1694180472748"
+                      alt="whatsapp"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+        </section>
+
+        <div class="emprendimiento1">
+          <label for="prueba2"
+            ><img
+              class="logo-e"
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO_MAIRA.svg?v=1692114004511"
+              alt="#"
+          /></label>
+        </div>
+
+        <input type="checkbox" id="prueba2" />
+        <label class="mostrar2" for="prueba2"><span></span></label>
+
+        <!-- PERFIL 2 -->
+        <section class="perfiles2">
+          <center>
+            <div class="ancho_info">
+              <div class="infoperfil">
+                <div class="logo_pag2">
+                  <img
+                    src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO_MAIRA.svg?v=1692114004511"
+                    alt="logo"
+                  />
+                </div>
+                <div>
+                  <h1 class="h1_titulo">MAIRA CLOTHE</h1>
+                  <h2 class="h1_titulo">Nicolas Garzón</h2>
+                </div>
+                <div class="div-donar">
+                  <button class="boton dos">
+                    <span
+                      >DONAR
+                      <img
+                        class="favorito"
+                        src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Coraz%C3%B3n.svg?v=1695043070063"
+                    /></span>
+                  </button>
+                </div>
+              </div>
+              <center>
+              <div class="filminuto">
+                <video src="https://cdn.glitch.me/d92b818a-abeb-4936-adb4-955c6420ae91/mairaclothe.mp4?v=1695049273681" width="540" height="380" controls playsinline></video>
+              </div>
+                </center>
+              
+              
+              
+              <div class="productos">
+                <h1 class="h2_titulo">PRODUCTOS</h1>
+<div class="espacio_productos">
+                <div class="productospag2">
+                  <div class="size_car">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/collaroso1.jpg?v=1695009237379"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/collaroso2.jpg?v=1695009241279"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/collaroso3.jpg?v=1695009246436"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Collar colección Bluegummy</h1>
+                          <p class="texto_parrafopag2">
+                            Collar hecho en acrílico azul, en forma de osito de goma con cadenas y cierre en acero. 
+                          </p>
+                          <h2 class="precio_pag2">$45.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/collarsan2.jpg?v=1695009044239"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/collarsan1.jpg?v=1695009040537"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/collarsan3.jpg?v=1695009052258"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                     <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Collar Bloodline</h1>
+                          <p class="texto_parrafopag2">Collar hecho en acrílico rojo, en forma de sangre, con cadena y cierre en acero.</p>
+                          <h2 class="precio_pag2">$40.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car2">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/arededino1.jpg?v=1695007970653"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/aretedino2.jpg?v=1695008256328"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/aretedino4.jpg?v=1695007983372"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Arete de Dinosaurio</h1>
+                          <p class="texto_parrafopag2">Aretes personalizados en forma de dinosaurio, hechos con acrílico de color morado y topo en acero</p>
+                          <h2 class="precio_pag2">$30.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car2">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/aretenube5.jpg?v=1695008934682"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/aretenube3.jpg?v=1695008941194"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/aretenube4.jpg?v=1695008938402"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+             <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Arete de Nubes</h1>
+                          <p class="texto_parrafopag2">Aretes personalizados en forma de nubes, hechos con acrílico tornasol, cadenas y topo en acero.</p>
+                          <h2 class="precio_pag2">$40.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="contacto">
+                <h1 class="h2_titulo">CONTACTO</h1>
+                <div class="redes">
+                  <div>
+                    <a href="https://instagram.com/maira_clothe?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/insta%20linea.svg?v=1692104023115"
+                      alt="instagram"
+                    /></a>
+                  </div>
+                  <div>
+                    <a href="https://instagram.com/maira_clothe?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <img 
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/facebook%20linea.svg?v=1692104023487"
+                      alt="facebook"/>  
+                         </a>
+                  </div>
+                  <div>
+                    
+                    <a href="https://wa.link/95rtqd" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/wasap.svg?v=1694180472748"
+                      alt="whatsapp"
+                    /></a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+        </section>
+
+        <div class="emprendimiento1">
+          <label for="prueba3"
+            ><img
+              class="logo-e"
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/yulcrochet.svg?v=1692104023859"
+              alt="#"
+          /></label>
+        </div>
+
+        <input type="checkbox" id="prueba3" />
+        <label class="mostrar3" for="prueba3"><span></span></label>
+
+        <!-- PERFIL 3 -->
+        <section class="perfiles3">
+          <center>
+            <div class="ancho_info">
+              <div class="filminuto">
+                <img />
+              </div>
+              <div class="infoperfil">
+                <div class="logo_pag2">
+                  <img
+                    src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/yulcrochet.svg?v=1692104023859"
+                    alt="logo"
+                  />
+                </div>
+                <div>
+                  <h1 class="h1_titulo">Yulcrochet</h1>
+                  <h2 class="h1_titulo">Yulianan Correa y Sindy Yuliana Rodriguez</h2>
+                </div>
+                <div class="div-donar">
+                  <button class="boton dos">
+                    <span
+                      >DONAR
+                      <img
+                        class="favorito"
+                        src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Coraz%C3%B3n.svg?v=1695043070063"
+                    /></span>
+                  </button>
+                </div>
+              </div>
+              
+              <center>
+              <div class="filminuto">
+                <video src="https://cdn.glitch.me/d92b818a-abeb-4936-adb4-955c6420ae91/yulcrochet.mp4?v=1695049824786" width="540" height="380" controls playsinline></video>
+              </div>
+                </center>
+              <div class="productos">
+                <h1 class="h2_titulo">PRODUCTOS</h1>
+<div class="espacio_productos">
+                <div class="productospag2">
+                  <div class="size_car">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/perro2.jpg?v=1695009557187"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/perro3.jpg?v=1695009561360"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/perro4.jpg?v=1695009572090"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                                      <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Amigurumis en Crochet </h1>
+                          <p class="texto_parrafopag2">
+                           Personajes en técnica crochet personalizados rellenos de algodón sintético.
+                          </p>
+                          <h2 class="precio_pag2">$15.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/balaca1.jpg?v=1695009645108"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/balaca2.JPG.jpg?v=1695009653317"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/balaca3.jpg?v=1695009658725"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+               <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Accesorios en Crochet</h1>
+                          <p class="texto_parrafopag2">Balaca en técnica crochet con lana personalizada al gusto del cliente</p>
+                          <h2 class="precio_pag2">$20.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/virgen2.jpg?v=1695009677257"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/virgen1.jpg?v=1695009674252"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/virgen3.jpg?v=1695009681672"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                 <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Llaveros en Crochet</h1>
+                          <p class="texto_parrafopag2">Llaveros personalizados en técnica crochet, con cadena y aro de metal para llevarlo a cualquier lugar.</p>
+                          <h2 class="precio_pag2">$5.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="productospag2">
+                  <div class="size_car2">
+                    <div class="swiper myCards">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/flor1.jpg?v=1695009715191"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/flor2.jpg?v=1695009722147"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/flor5.jpg?v=1695009727925"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="info_produ">
+                    <ul>
+                      <li class="infoprod">
+                        <div>
+                          <h1 class="texto_verdepag2">Ramo de flores en Crochet</h1>
+                          <p class="texto_parrafopag2">Ramo de flores con diferente tipo de flor  en técnica de crochet personalizado al gusto del cliente.</p>
+                          <h2 class="precio_pag2">$15.000 c/u</h2>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="contacto">
+                <h1 class="h2_titulo">CONTACTO</h1>
+                <div class="redes">
+                  <div>
+                    <a href="https://instagram.com/yulcrochet_?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/insta%20linea.svg?v=1692104023115"
+                      alt="instagram"
+                    /></a>
+                  </div>
+                  <div>
+                    <a href="https://instagram.com/yulcrochet_?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/facebook%20linea.svg?v=1692104023487"
+                      alt="facebook"
+                    />
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://wa.link/qnsk3f" target="_blank">
+                    <img
+                      class="rede_img"
+                      src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/wasap.svg?v=1694180472748"
+                      alt="whatsapp"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+        </section>
+
+        <div class="emprendimiento1">
+          <img
+            class="logo-e"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/te.svg?v=1692104019396"
+            alt="IMG"
+          />
+        </div>
+        <div class="emprendimiento1">
+          <img
+            class="logo-e"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/cabra.svg?v=1692104021559"
+            alt="IMG"
+          />
+        </div>
+        <div class="emprendimiento1">
+          <img
+            class="logo-e"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/bananito.svg?v=1692104021843"
+            alt="IMG"
+          />
+        </div>
+        <div class="emprendimiento1">
+          <img
+            class="logo-e"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/taquito.svg?v=1692104019811"
+            alt="IMG"
+          />
+        </div>
+        <div class="emprendimiento1">
+          <img
+            class="logo-e"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/doll%201.svg?v=1692104020823"
+            alt="IMG"
+          />
+        </div>
+        <div class="emprendimiento1">
+          <img
+            class="logo-e"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Mesa%20de%20trabajo%201.svg?v=1692104020153"
+            alt="IMG"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- INICIO DEL FOOTER (me voy a basar el diseño del footer en google)-->
+    <footer id="piepag">
+      <div class="logof">
+        <img
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO BLANCO.svg?v=1691598073298"
+        />
+      </div>
+      <div class="menu_abajo">
+        <ul>
+          <a href="#"><li>Inicio</li></a>
+          <a href="#"><li>Suscripciones</li></a>
+          <a href="#"><li>Productos y Emprendedores</li></a>
+          <a href="#"><li>Nosotros</li></a>
+          <a href="#"><li>Log in</li></a>
+          <a href="#"><li>Términos y condiciones</li></a>
+        </ul>
+      </div>
+      <div class="redes_amalgama">
+        <a href="https://instagram.com/amalgama_emprende?igshid=MzRlODBiNWFlZA==" target="_blank" > 
+        <img
+          class="img-footer"
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/insta%20linea.svg?v=1692104023115"
+          alt="IMG"
+        /></a>
+        <a href="https://youtu.be/EFcyZ5ld_RM"  target="_blank" >
+        <img
+          class="img-footer"
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/youtube%20linea.svg?v=1692104022133"
+          alt="IMG"
+        /></a>
+                <a href="https://wa.link/ygyo8s" target="_blank" >
+        <img
+          class="img-footer"
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/wasap.svg?v=1694180472748"
+          alt="IMG"
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</html>

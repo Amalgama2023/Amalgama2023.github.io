@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Amalgama</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.css"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="loader disppear">
+      <iframe
+        src="https://lottie.host/?file=07db337a-a6d9-4426-b07b-b86f4ab8ae94/YgtuNFJDzx.json"
+      ></iframe>
+    </div>
+
+    <!-- MENÚ -->
+    <nav id="menú">
+      <input type="checkbox" id="hamb" />
+      <label class="hambur" for="hamb">
+        <span>
+          <img
+            class="menuhamb"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Men%C3%BA.svg?v=1694525196460" /></span
+      ></label>
+
+      <ul class="pru">
+        <a class="subs" href="#suscripcion"
+          ><li class="texto_576">Suscripciones</li></a
+        >
+        <a class="empre" href="#PRODUCTOS"
+          ><li class="texto_576">Productos y Emprendedores</li></a
+        >
+      </ul>
+      <img
+        class="logo"
+        src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO BLANCO.svg?v=1691598073298"
+      />
+
+      <ul class="pru">
+        <div class="buscador">
+          <input type="text" placeholder="Buscar" required />
+          <div class="btn">
+            <a>
+              <img
+                class="buscar"
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Lupa.svg?v=1691544366553"
+            /></a>
+            <i class="search"></i>
+          </div>
+        </div>
+        <a class="sobre_nosotros" href="#MISION">
+          <img
+            class="nosotros"
+            src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/IcoNn%20i.svg?v=1692109377458"
+          />
+        </a>
+
+        <!-- Inicio del boton -->
+        <div class="boton-modal">
+          <label for="btn-modal">
+            <img
+              class="usuario"
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Long%20in.svg?v=1691544369601"
+            />
+          </label>
+        </div>
+        <!-- Fin del boton -->
+
+        <!--Ventana Modal-->
+        <input type="checkbox" id="btn-modal" />
+        <div class="container-modal">
+          <div class="content-modal">
+            <h2>Login</h2>
+            <div class="input-box">
+              <span class="icon"
+                ><img
+                  class="email-img"
+                  src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Mail%20filled.svg?v=1691883813046"
+              /></span>
+              <input type="email" required />
+              <label>Correo</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <img
+                  class="email-img2"
+                  src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Password%20filled.svg?v=1691883808303"
+                />
+              </span>
+              <input type="password" required />
+              <label>Contraseña</label>
+            </div>
+            <div class="recordar-contra">
+              <label><input type="checkbox" />Recordar Contraseña</label>
+              <a class="animacion" href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button class="btn-inicio" type="submit">Login</button>
+            <div class="registrarse">
+              <p>
+                ¿No tienes cuenta?
+                <a href="#">Registrate</a>
+              </p>
+            </div>
+
+            <div class="btn-cerrar">
+              <label for="btn-modal">Cerrar</label>
+            </div>
+          </div>
+          <label for="btn-modal" class="cerrar-modal"></label>
+        </div>
+        <!--Fin de Ventana Modal-->
+      </ul>
+    </nav>
+
+    <!-- BANNER SPLINE -->
+    <header id="banner">
+      <center>
+        <div class="banner-area">
+          <spline-viewer
+            class="ban_spline"
+            url="https://prod.spline.design/YqZmatbfRJN7Exwy/scene.splinecode"
+          ></spline-viewer>
+
+          <spline-viewer
+            class="ban_spline2"
+            url="https://prod.spline.design/Gr8PsD8Nz2eOnUrw/scene.splinecode"
+          ></spline-viewer>
+        </div>
+      </center>
+    </header>
+
+    <!-- LOGIN páginá emergente-->
+    <!-- <section>
+      <h4>Usuario</h4>
+      <h4>Contraseña</h4>
+      <h4>¿No recuerdas tu contraseña?</h4>
+      <h4>Crear cuenta</h4>
+    </section> -->
+
+    <!-- DESTACADOS -->
+    <section id="DESTACADOS">
+      <h1>
+        Destacados <br />
+        del mes
+      </h1>
+      <br />
+      <br />
+      <div class="destacado_banner">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/CUPCAKES_YUL%C2%B4S.svg?v=1692104021180"
+                alt="IMGFAV1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO_MAIRA.svg?v=1692114004511"
+                alt="IMGFAV2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/yulcrochet.svg?v=1692104023859"
+                alt="IMGFAV3"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/taquito.svg?v=1692104019811"
+                alt="IMGFAV4"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/doll%201.svg?v=1692104020823"
+                alt="IMGFAV5"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/cabra.svg?v=1692104021559"
+                alt="IMGFAV6"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/bananito.svg?v=1692104021843"
+                alt="IMGFAV7"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/CUPCAKES_YUL%C2%B4S.svg?v=1692104021180"
+                alt="IMGFAV1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO_MAIRA.svg?v=1692114004511"
+                alt="IMGFAV2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/yulcrochet.svg?v=1692104023859"
+                alt="IMGFAV3"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/te.svg?v=1692104019396"
+                alt="IMGFAV8"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Mesa%20de%20trabajo%201.svg?v=1692104020153"
+                alt="IMGFAV9"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/doll%201.svg?v=1692104020823"
+                alt="IMGFAV5"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/cabra.svg?v=1692104021559"
+                alt="IMGFAV6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="PRODUCTOS">
+      <h1>Productos y emprendedores</h1>
+      <br />
+      <br />
+      <center>
+        <div class="contenido_productos">
+          <div class="animacion_productos">
+            <spline-viewer
+              url="https://prod.spline.design/4mfI5kT2-KphnPh8/scene.splinecode"
+            ></spline-viewer>
+          </div>
+          <div>
+            <spline-viewer
+              class="animacion_productos2"
+              url="https://prod.spline.design/D5hiO46JzE7HLjKV/scene.splinecode"
+            ></spline-viewer>
+          </div>
+          <div class="contenedor">
+            <div class="tarjeta">
+              <h3>
+                <a class="enlace-pag2" href="Perfiles.html">
+                  DESCUBRE MÁS<img
+                    class="adelantar"
+                    src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Adelante%202.svg?v=1693312552909"
+                  />
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </center>
+    </section>
+
+    <!-- SUSCRIPCIÓN -->
+    <section id="suscripcion">
+      <h1 class="sus_title">Suscripciones</h1>
+      <div class="contenedor_sus">
+        <div class="suscripcion_1">
+          <h1 class="titulos_suscrip">PLAN A</h1>
+          <br />
+          <p>
+            <b>3 meses</b> de suscripción, <br />
+            para que empieces <br />
+            a ver crecer tu <br />
+            emprendimiento a buen <br />
+            rítmo con AMALGAMA.
+          </p>
+          <br />
+          <h5 class="texto_tachado">Antes $100.000</h5>
+          <div>
+            <h5>AHORA</h5>
+          </div>
+          <br />
+          <div class="precio">
+            <h4>co$</h4>
+            <h1>90.000</h1>
+          </div>
+          <br />
+          <button class="boton_suscrip">
+            <a class="colorboton" href="#"> SUSCRÍBETE </a>
+          </button>
+        </div>
+
+        <div class="suscripcion_2">
+          <h1 class="titulos_suscrip">PLAN B</h1>
+          <br />
+          <p>
+            Ahora que has visto que<br />
+            AMALGAMA es tu mejor <br />
+            aliado, <b>6 meses</b> es el tiempo<br />
+            perfecto para que disfrutes<br />
+            de los buenos resultados.
+          </p>
+          <br />
+          <h5 class="texto_tachado">co $180.000</h5>
+          <div>
+            <h5>AHORRA 15%</h5>
+          </div>
+          <br />
+          <div class="precio">
+            <h4>co$</h4>
+            <h1>166.500</h1>
+          </div>
+          <br />
+          <button class="boton_suscrip">
+            <a class="colorboton" href="#"> SUSCRÍBETE </a>
+          </button>
+        </div>
+        <div class="suscripcion_3">
+          <h1 class="titulos_suscrip">PLAN C</h1>
+          <br />
+          <p>
+            Si tu negocio está creciendo<br />
+            rápido y quieres que siga<br />
+            progresando aún más rápido,<br />
+            el plan de <b>1 año</b> es ideal<br />
+            para tí y tu emprendimiento.
+          </p>
+          <br />
+          <h5 class="texto_tachado">co $360.000</h5>
+          <div>
+            <h5>AHORRA 15%</h5>
+          </div>
+          <br />
+          <div class="precio">
+            <h4>co$</h4>
+            <h1>306.000</h1>
+          </div>
+          <br />
+          <button class="boton_suscrip">
+            <a class="colorboton" href="#"> SUSCRÍBETE </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISIÓN -->
+    <center>
+      <section id="MISION">
+        <h1>Misión</h1>
+        <div class="contenido_mision">
+          <div class="mision_contenido">
+            <p class="parrafobase">
+              Apoyar a los emprendimientos locales, promocionando sus productos
+              y/o servicios por medio de la publicidad, con el fin de atraer y
+              fidelizar nuevos clientes.
+            </p>
+          </div>
+          <div class="mision-animate">
+            <spline-viewer
+              class="animacion_mision"
+              url="https://prod.spline.design/DLnMmCVsLkMz1K8R/scene.splinecode"
+            ></spline-viewer>
+          </div>
+        </div>
+      </section>
+    </center>
+
+    <!-- VISIÓN -->
+    <center>
+      <section id="VISION">
+        <h1>Visión</h1>
+        <div class="contenido_vision">
+          <div class="vision-animate">
+            <spline-viewer
+              class="animacion_vision"
+              url="https://prod.spline.design/R-cZAETgQ5L-5aBW/scene.splinecode"
+            ></spline-viewer>
+          </div>
+          <div class="vision_contenido">
+            <p class="parrafobase">
+              Convertirnos en la empresa más elegida por emprendedores locales
+              para promocionar sus negocios, dando como resultado la creación de
+              una comunidad de emprendimientos en Sabana Centro.
+            </p>
+          </div>
+        </div>
+      </section>
+    </center>
+
+    <!-- INTEGRANTES -->
+    <section id="integrantes">
+      <div class="contenedor_integrantes">
+        <!-- olga -->
+        <div class="card">
+          <div class="front">
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Olga.svg?v=1691596967864"
+            />
+          </div>
+          <div class="back">
+            <div class="nombre_integrante">
+              <h1 align="center">OLGA GUACANEME</h1>
+              <p align="center"><b>Agente de medios.</b></p>
+            </div>
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Olga%20Opacidad.svg?v=1692023913463"
+            />
+          </div>
+        </div>
+        <!-- LAURA REYES -->
+        <div class="card2">
+          <div class="front2">
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Laura%20R.svg?v=1692110019598"
+            />
+          </div>
+          <div class="back2">
+            <div class="nombre_integrante">
+              <h1 align="center">LAURA REYES</h1>
+              <p align="center">
+                <b>Directora ejecutiva de cuentas y Planificadora.</b>
+              </p>
+            </div>
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Laura%20R%20Opacidad.svg?v=1692109441589"
+            />
+          </div>
+        </div>
+
+        <!-- LAURA LÓPEZ -->
+        <div class="card3">
+          <div class="front3">
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Laura%20L.svg?v=1691596961008"
+            />
+          </div>
+          <div class="back3">
+            <div class="nombre_integrante">
+              <h1 align="center">LAURA LÓPEZ</h1>
+              <p align="center"><b>Directora de Comunicación.</b></p>
+            </div>
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Laura%20L%20Opacidad.svg?v=1692109438718"
+            />
+          </div>
+        </div>
+
+        <!-- RICHARD PINZÓN -->
+        <div class="card4">
+          <div class="front4">
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Richard.svg?v=1691596314634"
+            />
+          </div>
+          <div class="back4">
+            <div class="nombre_integrante">
+              <h1 align="center">RICHARD PINZÓN</h1>
+              <p align="center"><b>Director de arte.</b></p>
+            </div>
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Richard%20Opacidad.svg?v=1692109444204"
+            />
+          </div>
+        </div>
+
+        <!-- DIEGO RIVERA-->
+        <div class="card5">
+          <div class="front5">
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Diego.svg?v=1691596955660"
+            />
+          </div>
+          <div class="back5">
+            <div class="nombre_integrante">
+              <h1 align="center">DIEGO RIVERA</h1>
+              <p align="center"><b>Community Manager.</b></p>
+            </div>
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Diego%20Opacidad.svg?v=1692109474801"
+            />
+          </div>
+        </div>
+
+        <!-- ALEJANDRA GUEVARA -->
+        <div class="card6">
+          <div class="front6">
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Aleja.svg?v=1691596952927"
+            />
+          </div>
+          <div class="back6">
+            <div class="nombre_integrante">
+              <h1 align="center">ALEJANDRA GUEVARA</h1>
+              <p align="center"><b>Directora Creativa y redactora.</b></p>
+            </div>
+            <img
+              src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/Aleja%20Opacidad.svg?v=1692109437463"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INICIO DEL FOOTER (me voy a basar el diseño del footer en google)-->
+    <footer id="piepag">
+      <div class="logof">
+        <img
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/LOGO BLANCO.svg?v=1691598073298"
+        />
+      </div>
+      <div class="menu_abajo">
+        <ul>
+          <a href="#"><li>Inicio</li></a>
+          <a href="#"><li>Suscripciones</li></a>
+          <a href="#"><li>Productos y Emprendedores</li></a>
+          <a href="#"><li>Nosotros</li></a>
+          <a href="#"><li>Log in</li></a>
+          <a href="#"><li>Términos y condiciones</li></a>
+        </ul>
+      </div>
+      <div class="redes_amalgama">
+        <a href="https://instagram.com/amalgama_emprende?igshid=MzRlODBiNWFlZA==" target="_blank" >
+        <img
+          class="img-footer"
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/insta%20linea.svg?v=1692104023115"
+          alt="IMG"
+        />
+          </a>
+        <a href="https://youtu.be/EFcyZ5ld_RM"  target="_blank" >
+        <img
+          class="img-footer"
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/youtube%20linea.svg?v=1692104022133"
+          alt="IMG"
+        /></a>
+        
+        <a href="https://wa.link/ygyo8s" target="_blank" >
+        <img
+          class="img-footer"
+          src="https://cdn.glitch.global/d92b818a-abeb-4936-adb4-955c6420ae91/wasap.svg?v=1694180472748"
+          alt="IMG"
+        /></a>
+      </div>
+    </footer>
+    <script>
+      <!--ScrollReveal().reveal('.animacion_mision', { reset:true });-->
+    </script>
+  </body>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!--<lottie-player
+    src="https://lottie.host/07db337a-a6d9-4426-b07b-b86f4ab8ae94/YgtuNFJDzx.json"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px"
+    loop
+    autoplay
+  >
+  </lottie-player>-->
+
+  <script
+    type="module"
+    src="https://unpkg.com/@splinetool/viewer@0.9.419/build/spline-viewer.js"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/@splinetool/viewer@0.9.425/build/spline-viewer.js"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/@splinetool/viewer@0.9.420/build/spline-viewer.js"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/@splinetool/viewer@0.9.446/build/spline-viewer.js"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/@splinetool/viewer@0.9.446/build/spline-viewer.js"
+  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</html>
